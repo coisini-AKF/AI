@@ -365,6 +365,39 @@ h3 {
   font-weight: 900;
 }
 
+.copy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.copy-grid article {
+  display: grid;
+  gap: 12px;
+  min-height: 250px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 24px;
+  background: var(--panel);
+  box-shadow: var(--soft-shadow);
+}
+
+.copy-grid span {
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.copy-grid h2 {
+  margin-bottom: 0;
+  font-size: 26px;
+}
+
+.copy-grid p {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
 .section.compact {
   padding-top: 34px;
 }
@@ -952,6 +985,7 @@ code {
   .skill-grid,
   .revenue-grid,
   .topic-grid,
+  .copy-grid,
   .topic-hub-grid,
   .action-grid,
   .insight-strip,
@@ -987,6 +1021,7 @@ code {
   .skill-grid,
   .revenue-grid,
   .topic-grid,
+  .copy-grid,
   .topic-hub-grid,
   .action-grid,
   .insight-strip,
