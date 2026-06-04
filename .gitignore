@@ -1,0 +1,6 @@
+affiliate-site*.zip
+standalone-deploy/
+netlify-drop.html
+netlify-js/
+.DS_Store
+Thumbs.db
