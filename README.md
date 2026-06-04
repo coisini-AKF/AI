@@ -22,6 +22,7 @@
 - `ai-writing-tools.html`、`ai-ppt-tools.html`、`ai-video-tools.html`、`ai-image-tools.html`、`ai-coding-tools.html`、`ai-automation-tools.html`、`ai-resume-tools.html`、`ai-study-tools.html`、`ai-data-tools.html`：高意图搜索专题页。
 - `deploy.html`：GitHub 到 Netlify 自动部署说明页。
 - `share-copy.html`：小红书、知乎、朋友圈和社群发布文案。
+- `admin-growth.html`：内部增长、收益配置和点击统计管理页，设置为 noindex。
 - `styles.css`：响应式布局和工具目录样式。
 - `script.js`：联盟链接配置、点击统计、完整工具目录和搜索逻辑。
 - `assets/`：页面图片资源。

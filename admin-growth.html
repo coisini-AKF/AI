@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>站点增长与收益配置 | 管理页</title>
+    <meta name="description" content="AI工具导航站点的内部增长、联盟链接、广告位和发布策略管理页。" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="AI智能工具导航">
+        <span class="brand-mark">AI</span>
+        <span>内部增长配置</span>
+      </a>
+      <nav class="nav" aria-label="管理导航">
+        <a href="index.html">返回首页</a>
+        <a href="share-copy.html">发布文案</a>
+        <a href="deploy.html">部署说明</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">Admin</p>
+        <h1>站点增长与收益配置</h1>
+        <p>此页用于内部运营：联盟链接、赞助位、广告位、引流动作和部署检查。不要在用户首页展示这些内容。</p>
+      </section>
+
+      <section class="section revenue-section">
+        <div class="section-heading">
+          <p class="eyebrow">收益模型</p>
+          <h2>免费工具入口，用周边需求变现</h2>
+          <p>用户使用工具目录免费；站点收益来自广告、赞助推荐、联盟链接、部署服务、教程流量和自动化工作流搭建。</p>
+        </div>
+        <div class="revenue-grid">
+          <article><strong>01</strong><h3>赞助推荐位</h3><p>给云服务、API 平台、自动化工具、模板平台放清晰标注的赞助位。</p></article>
+          <article><strong>02</strong><h3>部署教程流量</h3><p>写 AutoGen、n8n、AI 客服等教程，承接搜索流量。</p></article>
+          <article><strong>03</strong><h3>联盟链接</h3><p>替换模型 API、云服务器、域名、SaaS、模板素材的追踪链接。</p></article>
+          <article><strong>04</strong><h3>代部署服务</h3><p>提供一次性安装、私有部署、工作流搭建和企业内训。</p></article>
+        </div>
+      </section>
+
+      <section class="section action-section">
+        <div class="section-heading">
+          <p class="eyebrow">今日执行清单</p>
+          <h2>先产生真实访问和可追踪点击</h2>
+          <p>新站先验证用户会点什么，再放大内容和广告。</p>
+        </div>
+        <div class="action-grid">
+          <article><span>内容</span><h3>发布 5 条引流内容</h3><p>围绕免费AI工具、GitHub开源Agent、PPT/视频/写作工具合集发布。</p></article>
+          <article><span>链接</span><h3>替换 3 个联盟入口</h3><p>优先替换淘宝联盟选品、模板素材、云服务器/API 工具。</p></article>
+          <article><span>索引</span><h3>提交 sitemap</h3><p>提交 sitemap.xml，保留 robots.txt 和 llms.txt。</p></article>
+          <article><span>复盘</span><h3>查看点击入口</h3><p>先看本地点击统计，后续接 GA4、Umami 或百度统计。</p></article>
+        </div>
+      </section>
+
+      <section class="section order-section" id="monetize">
+        <div class="order-copy">
+          <p class="eyebrow">配置链接</p>
+          <h2>把占位链接换成真实推广链接</h2>
+          <p>在 <code>script.js</code> 里替换 <code>affiliateLinks</code>。不要伪造收益，不要诱导无效点击。</p>
+          <div class="contact-box">
+            <span>广告位：顶部 970x90、内容流 336x280</span>
+            <span>跳转位：写作、PPT、图片、视频、编程、办公、简历、学习、数据、素材等入口</span>
+          </div>
+        </div>
+        <div class="analytics-panel">
+          <h3>本地点击统计</h3>
+          <p>用于上线前验证哪个入口更吸引人。真实投放请接 GA4 / Umami / 百度统计。</p>
+          <div id="clickStats" class="stats"></div>
+          <button class="button secondary full" type="button" id="resetStats">清空统计</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
