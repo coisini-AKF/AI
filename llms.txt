@@ -23,3 +23,6 @@ https://shiny-belekoy-d2b680.netlify.app/
 - 免费 AI 工具导航：https://shiny-belekoy-d2b680.netlify.app/free-ai-tools.html
 - GitHub 开源 Skills 导航：https://shiny-belekoy-d2b680.netlify.app/github-skills.html
 - 部署与更新说明：https://shiny-belekoy-d2b680.netlify.app/deploy.html
+- AI 写作工具导航：https://shiny-belekoy-d2b680.netlify.app/ai-writing-tools.html
+- AI PPT 工具导航：https://shiny-belekoy-d2b680.netlify.app/ai-ppt-tools.html
+- AI 视频工具导航：https://shiny-belekoy-d2b680.netlify.app/ai-video-tools.html

@@ -19,6 +19,7 @@
 - `index.html`：页面结构、SEO 标题和广告位。
 - `free-ai-tools.html`：免费 AI 工具专题页。
 - `github-skills.html`：GitHub 开源 Skills 专题页。
+- `ai-writing-tools.html`、`ai-ppt-tools.html`、`ai-video-tools.html`：高意图搜索专题页。
 - `deploy.html`：GitHub 到 Netlify 自动部署说明页。
 - `styles.css`：响应式布局和工具目录样式。
 - `script.js`：联盟链接配置、点击统计、完整工具目录和搜索逻辑。

@@ -360,6 +360,11 @@ h3 {
   line-height: 1.7;
 }
 
+.topic-link {
+  color: var(--accent);
+  font-weight: 900;
+}
+
 .section.compact {
   padding-top: 34px;
 }
