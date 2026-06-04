@@ -12,6 +12,7 @@
 2. 替换 `script.js` 里的 `affiliateLinks`。
 3. 把站点部署到 Cloudflare Pages、Netlify、Vercel 或 GitHub Pages。
 4. 发 10 条引流内容，优先围绕“AI工具导航”“免费AI工具”“PPT模板”“简历模板”“AI写作”“AI视频工具”。
+5. 提交 `sitemap.xml`，观察首页和专题页是否被收录。
 
 ## 目录结构
 
