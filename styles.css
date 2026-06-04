@@ -718,6 +718,46 @@ h3 {
   line-height: 1.7;
 }
 
+.monetization-plan {
+  background: #fff;
+}
+
+.plan-table {
+  display: grid;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: var(--soft-shadow);
+}
+
+.plan-table > div {
+  display: grid;
+  grid-template-columns: 0.7fr 1.2fr 2fr 1fr;
+  gap: 12px;
+  border-top: 1px solid var(--line);
+  padding: 16px 18px;
+}
+
+.plan-table > div:first-child {
+  border-top: 0;
+  background: #f4f8f6;
+}
+
+.plan-table strong,
+.plan-table span {
+  min-width: 0;
+}
+
+.plan-table strong {
+  color: var(--ink);
+}
+
+.plan-table span {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
 .ad-band {
   display: grid;
   gap: 4px;
@@ -1037,6 +1077,10 @@ code {
 
   .library-toolbar span {
     align-self: flex-start;
+  }
+
+  .plan-table > div {
+    grid-template-columns: 1fr;
   }
 
   .analytics-panel {
