@@ -707,6 +707,55 @@ h3 {
   color: var(--ink);
 }
 
+.topic-section {
+  background:
+    linear-gradient(180deg, #f8fbf9 0, #fff 100%);
+}
+
+.topic-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.topic-hub-grid a {
+  display: grid;
+  gap: 8px;
+  min-height: 150px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: var(--soft-shadow);
+  transition:
+    border-color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.topic-hub-grid a:hover {
+  border-color: rgba(15, 143, 104, 0.36);
+  box-shadow: 0 20px 42px rgba(25, 38, 32, 0.12);
+  transform: translateY(-2px);
+}
+
+.topic-hub-grid span {
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.topic-hub-grid strong {
+  color: var(--ink);
+  font-size: 20px;
+}
+
+.topic-hub-grid em {
+  color: var(--muted);
+  font-style: normal;
+  line-height: 1.55;
+}
+
 .split {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
@@ -903,6 +952,7 @@ code {
   .skill-grid,
   .revenue-grid,
   .topic-grid,
+  .topic-hub-grid,
   .action-grid,
   .insight-strip,
   .steps {
@@ -937,6 +987,7 @@ code {
   .skill-grid,
   .revenue-grid,
   .topic-grid,
+  .topic-hub-grid,
   .action-grid,
   .insight-strip,
   .steps,
