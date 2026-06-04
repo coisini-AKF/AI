@@ -496,6 +496,60 @@ h3 {
   color: var(--accent);
 }
 
+.skill-section {
+  background:
+    linear-gradient(180deg, #eef4f1 0, #f6f8f7 100%);
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.skill-card {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  min-height: 250px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: var(--soft-shadow);
+}
+
+.skill-card.featured {
+  background:
+    linear-gradient(135deg, rgba(23, 33, 29, 0.95), rgba(31, 84, 68, 0.92)),
+    var(--ink);
+  color: #fff;
+}
+
+.skill-card.featured p {
+  color: #d6e2dc;
+}
+
+.skill-card h3 {
+  margin-bottom: 0;
+}
+
+.skill-card p {
+  margin-bottom: 4px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.skill-card a {
+  align-self: end;
+  color: var(--accent);
+  font-weight: 900;
+}
+
+.skill-card.featured a {
+  color: #8ef0c8;
+}
+
 .ad-band {
   display: grid;
   gap: 4px;
@@ -674,6 +728,7 @@ code {
   .tool-grid,
   .directory-grid,
   .library-grid,
+  .skill-grid,
   .insight-strip,
   .steps {
     grid-template-columns: 1fr 1fr;
@@ -704,6 +759,7 @@ code {
   .tool-grid,
   .directory-grid,
   .library-grid,
+  .skill-grid,
   .insight-strip,
   .steps,
   .headline-list {

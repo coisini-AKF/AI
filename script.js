@@ -105,6 +105,13 @@ const toolDirectory = [
   { category: "自动化", name: "IFTTT", desc: "个人效率和设备自动化。", url: "https://ifttt.com/" },
   { category: "自动化", name: "n8n", desc: "开源工作流自动化。", url: "https://n8n.io/" },
 
+  { category: "GitHub Skills", name: "Awesome Agent Skills", desc: "Agent Skills 和可复用技能清单。", url: "https://github.com/VoltAgent/awesome-agent-skills" },
+  { category: "GitHub Skills", name: "Awesome Agents", desc: "AI Agent 框架、项目和资源目录。", url: "https://github.com/kyrolabs/awesome-agents" },
+  { category: "GitHub Skills", name: "AutoGen", desc: "多智能体应用开发框架。", url: "https://github.com/microsoft/autogen" },
+  { category: "GitHub Skills", name: "OpenHands", desc: "面向软件开发任务的开源 Agent 平台。", url: "https://github.com/All-Hands-AI/OpenHands" },
+  { category: "GitHub Skills", name: "CrewAI", desc: "多 Agent 协作和任务编排框架。", url: "https://github.com/crewAIInc/crewAI" },
+  { category: "GitHub Skills", name: "Composio", desc: "让 Agent 连接外部应用和工具的集成平台。", url: "https://github.com/ComposioHQ/composio" },
+
   { category: "模板素材", name: "Envato Elements", desc: "模板、图片、字体、视频和设计素材。", url: "https://elements.envato.com/" },
   { category: "模板素材", name: "Freepik", desc: "矢量图、图片、模板和设计素材。", url: "https://www.freepik.com/" },
   { category: "模板素材", name: "Unsplash", desc: "免费图片素材。", url: "https://unsplash.com/" },
