@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>部署与更新说明 | GitHub 自动部署到 Netlify</title>
+    <meta
+      name="description"
+      content="AI智能工具导航的部署与更新说明：通过GitHub仓库连接Netlify，实现每次推送自动部署。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="AI智能工具导航">
+        <span class="brand-mark">AI</span>
+        <span>智能工具入口</span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="index.html#tools">工具导航</a>
+        <a href="free-ai-tools.html">免费AI工具</a>
+        <a href="github-skills.html">开源Skills</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">部署说明</p>
+        <h1>用 GitHub 自动部署，不再手动上传 zip</h1>
+        <p>
+          这个站点已经推送到 GitHub 仓库。把 Netlify 站点连接到该仓库后，每次修改代码并推送到 main 分支，Netlify 会自动发布新版页面。
+        </p>
+      </section>
+
+      <section class="section process">
+        <div class="section-heading">
+          <p class="eyebrow">Netlify 设置</p>
+          <h2>一次绑定，后续自动更新</h2>
+        </div>
+        <ol class="steps">
+          <li><strong>进入项目设置</strong><span>打开 Netlify 项目 shiny-belekoy-d2b680，进入 Deploys 或 Site configuration。</span></li>
+          <li><strong>连接 GitHub</strong><span>选择 Link to Git repository 或 Import from Git，授权 GitHub。</span></li>
+          <li><strong>选择仓库</strong><span>选择 coisini-AKF/AI，分支选择 main。</span></li>
+          <li><strong>部署根目录</strong><span>Build command 留空，Publish directory 设置为 . 或保持默认根目录。</span></li>
+        </ol>
+      </section>
+
+      <section class="section revenue-section">
+        <div class="section-heading">
+          <p class="eyebrow">更新规则</p>
+          <h2>以后更新网站只需要推送代码</h2>
+          <p>
+            本地改文件后执行提交和推送，Netlify 会自动读取 GitHub main 分支。当前项目是纯静态网站，不需要 npm install、build command 或后端服务器。
+          </p>
+        </div>
+        <div class="revenue-grid">
+          <article><strong>源码</strong><h3>GitHub</h3><p>仓库：coisini-AKF/AI。主要文件是 index.html、styles.css、script.js 和专题页。</p></article>
+          <article><strong>托管</strong><h3>Netlify</h3><p>站点：shiny-belekoy-d2b680。连接 GitHub 后自动部署。</p></article>
+          <article><strong>索引</strong><h3>SEO / AI</h3><p>robots.txt、sitemap.xml、llms.txt 已经放在根目录。</p></article>
+          <article><strong>变现</strong><h3>联盟与广告</h3><p>拿到推广链接后替换 script.js 里的 affiliateLinks。</p></article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
