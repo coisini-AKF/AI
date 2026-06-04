@@ -122,6 +122,29 @@
         </div>
       </section>
 
+      <section class="section library-section" id="library">
+        <div class="section-heading">
+          <p class="eyebrow">完整工具目录</p>
+          <h2>按场景查找 AI 工具和效率网站</h2>
+          <p>目录链接指向官方页面或公开入口。建议先试用工具，再根据自己的任务选择长期使用的服务。</p>
+        </div>
+        <div class="library-toolbar">
+          <input id="toolSearch" type="search" placeholder="搜索：写作、PPT、视频、编程、Notion、Canva..." aria-label="搜索工具" />
+          <button class="button secondary" type="button" id="clearSearch">清空</button>
+          <span id="toolCount">0 个工具</span>
+        </div>
+        <p id="toolSearchHint" class="search-hint">支持中文、英文、工具名和场景关键词，例如：Agent、GitHub、视频、PPT、自动化、简历。</p>
+        <div class="quick-searches" aria-label="热门搜索">
+          <button type="button" data-search-term="GitHub Agent">GitHub Agent</button>
+          <button type="button" data-search-term="视频">视频</button>
+          <button type="button" data-search-term="PPT">PPT</button>
+          <button type="button" data-search-term="写作">写作</button>
+          <button type="button" data-search-term="自动化">自动化</button>
+          <button type="button" data-search-term="简历">简历</button>
+        </div>
+        <div id="toolLibrary" class="library-grid" aria-live="polite"></div>
+      </section>
+
       <aside class="ad-band" aria-label="提示">
         <span>快速入口</span>
         <strong>先选任务场景，再打开对应工具。页面收录公开入口，具体收费规则以工具官网为准。</strong>
@@ -247,29 +270,6 @@
             <a class="outlink" href="#" data-link-id="daily-tools" rel="nofollow sponsored">打开推荐入口</a>
           </article>
         </div>
-      </section>
-
-      <section class="section library-section" id="library">
-        <div class="section-heading">
-          <p class="eyebrow">完整工具目录</p>
-          <h2>按场景查找 AI 工具和效率网站</h2>
-          <p>目录链接指向官方页面或公开入口。建议先试用工具，再根据自己的任务选择长期使用的服务。</p>
-        </div>
-        <div class="library-toolbar">
-          <input id="toolSearch" type="search" placeholder="搜索：写作、PPT、视频、编程、Notion、Canva..." aria-label="搜索工具" />
-          <button class="button secondary" type="button" id="clearSearch">清空</button>
-          <span id="toolCount">0 个工具</span>
-        </div>
-        <p id="toolSearchHint" class="search-hint">支持中文、英文、工具名和场景关键词，例如：Agent、GitHub、视频、PPT、自动化、简历。</p>
-        <div class="quick-searches" aria-label="热门搜索">
-          <button type="button" data-search-term="GitHub Agent">GitHub Agent</button>
-          <button type="button" data-search-term="视频">视频</button>
-          <button type="button" data-search-term="PPT">PPT</button>
-          <button type="button" data-search-term="写作">写作</button>
-          <button type="button" data-search-term="自动化">自动化</button>
-          <button type="button" data-search-term="简历">简历</button>
-        </div>
-        <div id="toolLibrary" class="library-grid" aria-live="polite"></div>
       </section>
 
       <section class="section skill-section" id="skills">
