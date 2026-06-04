@@ -29,3 +29,6 @@ https://shiny-belekoy-d2b680.netlify.app/
 - AI 图片工具导航：https://shiny-belekoy-d2b680.netlify.app/ai-image-tools.html
 - AI 编程工具导航：https://shiny-belekoy-d2b680.netlify.app/ai-coding-tools.html
 - AI 自动化工具导航：https://shiny-belekoy-d2b680.netlify.app/ai-automation-tools.html
+- AI 简历工具导航：https://shiny-belekoy-d2b680.netlify.app/ai-resume-tools.html
+- AI 学习工具导航：https://shiny-belekoy-d2b680.netlify.app/ai-study-tools.html
+- AI 数据分析工具导航：https://shiny-belekoy-d2b680.netlify.app/ai-data-tools.html
