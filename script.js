@@ -132,6 +132,15 @@ const libraryBox = document.querySelector("#toolLibrary");
 const searchInput = document.querySelector("#toolSearch");
 const toolCount = document.querySelector("#toolCount");
 
+function normalizeText(value) {
+  return String(value || "")
+    .normalize("NFKC")
+    .toLowerCase()
+    .replace(/[·’'".,，。/\\|()[\]{}:：;；、_-]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function readStats() {
   try {
     return JSON.parse(localStorage.getItem(storageKey)) || {};
@@ -145,6 +154,8 @@ function writeStats(stats) {
 }
 
 function renderStats() {
+  if (!statsBox) return;
+
   const stats = readStats();
   statsBox.innerHTML = Object.keys(labels)
     .map((id) => {
@@ -157,10 +168,22 @@ function renderStats() {
 function renderLibrary(query = "") {
   if (!libraryBox) return;
 
-  const keyword = query.trim().toLowerCase();
+  const keywords = normalizeText(query).split(" ").filter(Boolean);
   const tools = toolDirectory.filter((tool) => {
-    const haystack = `${tool.category} ${tool.name} ${tool.desc}`.toLowerCase();
-    return !keyword || haystack.includes(keyword);
+    const aliases = [
+      tool.category,
+      tool.name,
+      tool.desc,
+      tool.keywords,
+      tool.category === "GitHub Skills" ? "github skill skills agent agents 开源 技能 智能体" : "",
+      tool.category === "视频剪辑" ? "video 视频 剪辑 字幕 配音 数字人" : "",
+      tool.category === "PPT演示" ? "ppt presentation slides 演示 汇报 模板" : "",
+      tool.category === "写作文案" ? "writing write copy 文案 写作 改稿 润色" : "",
+      tool.category === "编程开发" ? "code coding dev 编程 代码 开发" : "",
+      tool.category === "自动化" ? "automation workflow 自动化 工作流" : "",
+    ];
+    const haystack = normalizeText(aliases.join(" "));
+    return !keywords.length || keywords.every((keyword) => haystack.includes(keyword));
   });
 
   const grouped = tools.reduce((groups, tool) => {
@@ -169,23 +192,28 @@ function renderLibrary(query = "") {
     return groups;
   }, {});
 
-  libraryBox.innerHTML = Object.entries(grouped)
-    .map(([category, items]) => {
-      const links = items
-        .map(
-          (tool) => `<a class="tool-row" href="${tool.url}" target="_blank" rel="noopener nofollow" data-tool-name="${tool.name}">
+  libraryBox.innerHTML = tools.length
+    ? Object.entries(grouped)
+        .map(([category, items]) => {
+          const links = items
+            .map(
+              (tool) => `<a class="tool-row" href="${tool.url}" target="_blank" rel="noopener nofollow" data-tool-name="${tool.name}">
             <strong>${tool.name}</strong>
             <span>${tool.desc}</span>
           </a>`,
-        )
-        .join("");
+            )
+            .join("");
 
-      return `<article class="library-card">
+          return `<article class="library-card">
         <h3>${category}</h3>
         <div>${links}</div>
       </article>`;
-    })
-    .join("");
+        })
+        .join("")
+    : `<article class="library-card empty-result">
+        <h3>没有找到匹配工具</h3>
+        <p>换一个关键词试试，例如 AI、视频、Agent、GitHub、PPT、写作、自动化。</p>
+      </article>`;
 
   if (toolCount) {
     toolCount.textContent = `${tools.length} 个工具`;
@@ -228,7 +256,7 @@ document.querySelectorAll(".headline-list button").forEach((button) => {
   button.dataset.originalText = button.textContent;
 });
 
-resetButton.addEventListener("click", () => {
+resetButton?.addEventListener("click", () => {
   localStorage.removeItem(storageKey);
   renderStats();
 });

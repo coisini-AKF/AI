@@ -503,6 +503,12 @@ h3 {
   font-weight: 800;
 }
 
+.search-hint {
+  margin: -10px 0 22px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
 .library-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -520,6 +526,16 @@ h3 {
 .library-card h3 {
   margin-bottom: 14px;
   font-size: 20px;
+}
+
+.library-card.empty-result {
+  grid-column: 1 / -1;
+}
+
+.library-card.empty-result p {
+  margin-bottom: 0;
+  color: var(--muted);
+  line-height: 1.7;
 }
 
 .tool-row {
