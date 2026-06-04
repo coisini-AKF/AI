@@ -130,6 +130,7 @@ const statsBox = document.querySelector("#clickStats");
 const resetButton = document.querySelector("#resetStats");
 const libraryBox = document.querySelector("#toolLibrary");
 const searchInput = document.querySelector("#toolSearch");
+const clearSearchButton = document.querySelector("#clearSearch");
 const toolCount = document.querySelector("#toolCount");
 
 function normalizeText(value) {
@@ -250,8 +251,35 @@ document.querySelectorAll("[data-link-id]").forEach((link) => {
   });
 });
 
+function runSearch(value, shouldScroll = false) {
+  if (!searchInput) return;
+  searchInput.value = value;
+  renderLibrary(value);
+  if (shouldScroll && libraryBox) {
+    libraryBox.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
 searchInput?.addEventListener("input", () => {
   renderLibrary(searchInput.value);
+});
+
+searchInput?.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    runSearch(searchInput.value, true);
+  }
+});
+
+clearSearchButton?.addEventListener("click", () => {
+  runSearch("", true);
+  searchInput?.focus();
+});
+
+document.querySelectorAll("[data-search-term]").forEach((button) => {
+  button.addEventListener("click", () => {
+    runSearch(button.dataset.searchTerm || "", true);
+  });
 });
 
 document.querySelectorAll(".headline-list button").forEach((button) => {

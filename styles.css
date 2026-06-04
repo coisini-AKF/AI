@@ -535,6 +535,10 @@ h3 {
   font: inherit;
 }
 
+.library-toolbar .button {
+  flex: 0 0 auto;
+}
+
 .library-toolbar span {
   flex: 0 0 auto;
   color: var(--muted);
@@ -545,6 +549,31 @@ h3 {
   margin: -10px 0 22px;
   color: var(--muted);
   font-size: 14px;
+}
+
+.quick-searches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.quick-searches button {
+  min-height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0 12px;
+  background: #fff;
+  color: var(--muted);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.quick-searches button:hover {
+  border-color: rgba(15, 143, 104, 0.42);
+  color: var(--accent);
 }
 
 .library-grid {
