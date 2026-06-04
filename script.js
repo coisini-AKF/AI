@@ -141,6 +141,15 @@ function normalizeText(value) {
     .trim();
 }
 
+function getToolIcon(tool) {
+  try {
+    const domain = new URL(tool.url).hostname;
+    return `https://www.google.com/s2/favicons?domain=${domain}&sz=64`;
+  } catch {
+    return "";
+  }
+}
+
 function readStats() {
   try {
     return JSON.parse(localStorage.getItem(storageKey)) || {};
@@ -198,8 +207,12 @@ function renderLibrary(query = "") {
           const links = items
             .map(
               (tool) => `<a class="tool-row" href="${tool.url}" target="_blank" rel="noopener nofollow" data-tool-name="${tool.name}">
-            <strong>${tool.name}</strong>
-            <span>${tool.desc}</span>
+            <img class="tool-icon" src="${getToolIcon(tool)}" alt="" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+            <span class="tool-fallback" aria-hidden="true">${tool.name.slice(0, 1).toUpperCase()}</span>
+            <span class="tool-copy">
+              <strong>${tool.name}</strong>
+              <span>${tool.desc}</span>
+            </span>
           </a>`,
             )
             .join("");

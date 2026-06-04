@@ -540,9 +540,40 @@ h3 {
 
 .tool-row {
   display: grid;
-  gap: 4px;
+  grid-template-columns: 36px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
   padding: 12px 0;
   border-top: 1px solid rgba(223, 229, 220, 0.82);
+}
+
+.tool-icon,
+.tool-fallback {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.tool-icon {
+  display: block;
+  padding: 6px;
+  object-fit: contain;
+}
+
+.tool-fallback {
+  display: none;
+  place-items: center;
+  color: var(--accent);
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.tool-copy {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
 }
 
 .tool-row strong {
@@ -550,7 +581,7 @@ h3 {
   font-size: 15px;
 }
 
-.tool-row span {
+.tool-copy span {
   color: var(--muted);
   font-size: 14px;
   line-height: 1.55;
