@@ -312,6 +312,54 @@ h3 {
   padding: clamp(52px, 8vw, 92px) clamp(18px, 4vw, 64px);
 }
 
+.page-hero {
+  padding: clamp(54px, 8vw, 96px) clamp(18px, 4vw, 64px) clamp(36px, 5vw, 64px);
+  background:
+    linear-gradient(180deg, #eef4f1 0, rgba(255, 255, 255, 0.84) 100%),
+    var(--bg);
+}
+
+.page-hero h1 {
+  max-width: 980px;
+}
+
+.page-hero p {
+  max-width: 840px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.topic-grid article {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 24px;
+  background: var(--panel);
+  box-shadow: var(--soft-shadow);
+}
+
+.topic-grid span {
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.topic-grid h2 {
+  margin-top: 14px;
+  font-size: 28px;
+}
+
+.topic-grid p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
 .section.compact {
   padding-top: 34px;
 }
@@ -765,6 +813,7 @@ code {
   .library-grid,
   .skill-grid,
   .revenue-grid,
+  .topic-grid,
   .insight-strip,
   .steps {
     grid-template-columns: 1fr 1fr;
@@ -797,6 +846,7 @@ code {
   .library-grid,
   .skill-grid,
   .revenue-grid,
+  .topic-grid,
   .insight-strip,
   .steps,
   .headline-list {
