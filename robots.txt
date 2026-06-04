@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shiny-belekoy-d2b680.netlify.app/sitemap.xml

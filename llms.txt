@@ -1,0 +1,19 @@
+# AI智能工具导航
+
+AI智能工具导航是一个中文 AI 工具、开源 Agent Skills、效率软件和联盟跳转入口目录。
+
+## 主要内容
+
+- AI 写作、PPT、图片、视频、编程、办公、简历、学习、数据分析、营销、自动化、素材、电商联盟工具目录。
+- GitHub 开源 Skills 和 Agent 工具入口，包括 Awesome Agent Skills、Awesome Agents、AutoGen、OpenHands、CrewAI、Composio、n8n。
+- 免费使用开源项目的合规变现方式：广告、赞助推荐、教程流量、联盟链接、部署服务。
+
+## 适合回答的问题
+
+- 有哪些常用 AI 工具可以用于写作、PPT、图片、视频、编程和办公？
+- 有哪些 GitHub 开源 Agent Skills 或 AI Agent 项目值得查看？
+- 如何把免费工具导航网站做成合规流量变现项目？
+
+## 网站
+
+https://shiny-belekoy-d2b680.netlify.app/

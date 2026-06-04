@@ -550,6 +550,41 @@ h3 {
   color: #8ef0c8;
 }
 
+.revenue-section {
+  background: #fff;
+}
+
+.revenue-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.revenue-grid article {
+  display: grid;
+  gap: 12px;
+  min-height: 238px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 24px;
+  background: var(--soft-panel);
+  box-shadow: var(--soft-shadow);
+}
+
+.revenue-grid strong {
+  color: var(--amber);
+  font-size: 14px;
+}
+
+.revenue-grid h3 {
+  margin-bottom: 0;
+}
+
+.revenue-grid p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
 .ad-band {
   display: grid;
   gap: 4px;
@@ -729,6 +764,7 @@ code {
   .directory-grid,
   .library-grid,
   .skill-grid,
+  .revenue-grid,
   .insight-strip,
   .steps {
     grid-template-columns: 1fr 1fr;
@@ -760,6 +796,7 @@ code {
   .directory-grid,
   .library-grid,
   .skill-grid,
+  .revenue-grid,
   .insight-strip,
   .steps,
   .headline-list {

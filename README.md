@@ -20,10 +20,15 @@
 - `script.js`：联盟链接配置、点击统计、完整工具目录和搜索逻辑。
 - `assets/`：页面图片资源。
 - `netlify.toml`：Netlify 连接 GitHub 后直接部署根目录。
+- `robots.txt`、`sitemap.xml`、`llms.txt`：公开索引和 AI 可读说明文件。
 
 ## 后续自动部署
 
 把这个项目推到 GitHub 后，在 Netlify 里选择 Import from Git，连接这个仓库。以后只要修改文件并推送到 GitHub，Netlify 会自动部署，不需要再手动上传 zip。
+
+## GitHub 开源 Skills 变现边界
+
+可以收录、介绍、跳转、写教程和提供部署服务；不要把别人的开源项目伪装成自己的闭源付费产品。变现优先走广告、赞助位、联盟链接、云服务器/API 推荐、代部署和工作流搭建服务。
 
 ## 为什么不是直接放 AdSense
 
