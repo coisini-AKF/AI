@@ -26,3 +26,6 @@ https://shiny-belekoy-d2b680.netlify.app/
 - AI 写作工具导航：https://shiny-belekoy-d2b680.netlify.app/ai-writing-tools.html
 - AI PPT 工具导航：https://shiny-belekoy-d2b680.netlify.app/ai-ppt-tools.html
 - AI 视频工具导航：https://shiny-belekoy-d2b680.netlify.app/ai-video-tools.html
+- AI 图片工具导航：https://shiny-belekoy-d2b680.netlify.app/ai-image-tools.html
+- AI 编程工具导航：https://shiny-belekoy-d2b680.netlify.app/ai-coding-tools.html
+- AI 自动化工具导航：https://shiny-belekoy-d2b680.netlify.app/ai-automation-tools.html
