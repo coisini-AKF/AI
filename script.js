@@ -1,16 +1,16 @@
 const affiliateLinks = {
-  "ppt-template": "#replace-with-your-ppt-affiliate-link",
-  resume: "#replace-with-your-resume-affiliate-link",
-  writing: "#replace-with-your-writing-affiliate-link",
-  "image-design": "#replace-with-your-image-design-affiliate-link",
-  video: "#replace-with-your-video-affiliate-link",
-  coding: "#replace-with-your-coding-affiliate-link",
-  office: "#replace-with-your-office-affiliate-link",
-  study: "#replace-with-your-study-affiliate-link",
-  data: "#replace-with-your-data-affiliate-link",
-  assets: "#replace-with-your-assets-affiliate-link",
-  taobao: "#replace-with-your-taobao-alliance-link",
-  "daily-tools": "#replace-with-your-daily-tools-link",
+  "ppt-template": "ai-ppt-tools.html",
+  resume: "ai-resume-tools.html",
+  writing: "ai-writing-tools.html",
+  "image-design": "ai-image-tools.html",
+  video: "ai-video-tools.html",
+  coding: "ai-coding-tools.html",
+  office: "#library",
+  study: "ai-study-tools.html",
+  data: "ai-data-tools.html",
+  assets: "#library",
+  taobao: "https://pub.alimama.com/",
+  "daily-tools": "free-ai-tools.html",
 };
 
 const labels = {
@@ -238,9 +238,8 @@ document.querySelectorAll("[data-link-id]").forEach((link) => {
     writeStats(stats);
     renderStats();
 
-    if (!affiliateLinks[id] || affiliateLinks[id].startsWith("#replace")) {
+    if (!affiliateLinks[id]) {
       event.preventDefault();
-      alert("这里还是占位链接。请先在 script.js 里替换成你的联盟推广链接。");
     }
   });
 });
