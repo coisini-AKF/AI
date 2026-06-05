@@ -47,102 +47,77 @@
     <header class="site-header">
       <a class="brand" href="#top" aria-label="AI办公效率导航">
         <span class="brand-mark">AI</span>
-        <span>智能工具入口</span>
+        <span>AI效率导航</span>
       </a>
+      <button class="menu-button" type="button" aria-label="展开分类">☰</button>
       <nav class="nav" aria-label="主导航">
-        <a href="#tools">工具导航</a>
-        <a href="#library">全部目录</a>
+        <a href="#topics">场景入口</a>
+        <a href="#tools">推荐入口</a>
+        <a href="#library">完整目录</a>
         <a href="github-skills.html">开源Skills</a>
         <a href="free-ai-tools.html">免费AI工具</a>
-        <a href="ai-writing-tools.html">AI写作</a>
-        <a href="ai-ppt-tools.html">AI PPT</a>
-        <a href="ai-image-tools.html">AI图片</a>
-        <a href="ai-coding-tools.html">AI编程</a>
-        <a href="ai-resume-tools.html">AI简历</a>
-        <a href="share-copy.html">发布文案</a>
-        <a href="deploy.html">部署</a>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">AI工具 · 模板 · 软件导航</p>
-          <h1>高意图 AI 工具导航，帮用户更快找到可用入口</h1>
-          <p class="hero-text">
-            面向学生、职场人、创作者和运营人群整理 AI 写作、PPT、图片、视频、编程、办公、简历、学习、数据和素材入口。按任务直接进入对应工具页面，减少来回搜索时间。
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#tools">查看全部工具</a>
-            <a class="button secondary" href="#topics">查看专题页</a>
-          </div>
-          <dl class="proof-strip" aria-label="网站内容分类">
-            <div>
-              <dt>80+</dt>
-              <dd>工具入口</dd>
-            </div>
-            <div>
-              <dt>12</dt>
-              <dd>专题页面</dd>
-            </div>
-            <div>
-              <dt>GitHub</dt>
-              <dd>开源资源</dd>
-            </div>
-          </dl>
-        </div>
-        <div class="hero-console" aria-label="AI工具导航数据面板">
-          <div class="console-topbar">
-            <span></span>
-            <span></span>
-            <span></span>
-            <strong>AI Tools Radar</strong>
-          </div>
-          <div class="console-search">搜索工具、模板、软件、开源项目...</div>
-          <div class="console-grid">
-            <div>
-              <span>收录工具</span>
-              <strong>70+</strong>
-            </div>
-            <div>
-              <span>核心分类</span>
-              <strong>14</strong>
-            </div>
-            <div>
-              <span>专题页面</span>
-              <strong>12</strong>
-            </div>
-          </div>
-          <div class="console-list">
-            <div><span>AI写作</span><b>高搜索</b></div>
-            <div><span>视频生成</span><b>增长快</b></div>
-            <div><span>编程助手</span><b>转化强</b></div>
-            <div><span>模板素材</span><b>可返佣</b></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section library-section" id="library">
-        <div class="section-heading">
-          <p class="eyebrow">完整工具目录</p>
-          <h2>按场景查找 AI 工具和效率网站</h2>
-          <p>目录链接指向官方页面或公开入口。建议先试用工具，再根据自己的任务选择长期使用的服务。</p>
-        </div>
-        <div class="library-toolbar">
-          <input id="toolSearch" type="search" placeholder="搜索：写作、PPT、视频、编程、Notion、Canva..." aria-label="搜索工具" />
+    <aside class="side-rail" aria-label="工具总栏">
+      <a class="side-brand" href="#top">
+        <span class="side-logo">AI</span>
+        <strong>AI效率导航</strong>
+        <small>工具 · 模板 · 开源项目</small>
+      </a>
+      <div class="side-search">
+        <label for="toolSearch">全站搜索</label>
+        <input id="toolSearch" type="search" placeholder="搜索工具、场景、模板..." aria-label="搜索工具" />
+        <div class="side-search-actions">
           <button class="button secondary" type="button" id="clearSearch">清空</button>
           <span id="toolCount">0 个工具</span>
         </div>
-        <p id="toolSearchHint" class="search-hint">支持中文、英文、工具名和场景关键词，例如：Agent、GitHub、视频、PPT、自动化、简历。</p>
-        <div class="quick-searches" aria-label="热门搜索">
-          <button type="button" data-search-term="GitHub Agent">GitHub Agent</button>
-          <button type="button" data-search-term="视频">视频</button>
-          <button type="button" data-search-term="PPT">PPT</button>
-          <button type="button" data-search-term="写作">写作</button>
-          <button type="button" data-search-term="自动化">自动化</button>
-          <button type="button" data-search-term="简历">简历</button>
+      </div>
+      <nav class="side-nav" aria-label="分类入口">
+        <a href="#topics"><span>★</span>场景推荐</a>
+        <a href="free-ai-tools.html"><span>◆</span>免费AI工具</a>
+        <a href="#library" data-search-term="写作"><span>✎</span>AI写作</a>
+        <a href="#library" data-search-term="PPT"><span>▣</span>PPT与模板</a>
+        <a href="#library" data-search-term="视频"><span>▶</span>视频生成</a>
+        <a href="#library" data-search-term="图片"><span>◈</span>图片设计</a>
+        <a href="#library" data-search-term="编程"><span>&lt;/&gt;</span>AI编程</a>
+        <a href="#library" data-search-term="自动化"><span>↻</span>自动化</a>
+        <a href="#library" data-search-term="简历"><span>▤</span>简历求职</a>
+        <a href="github-skills.html"><span>⌘</span>开源Skills</a>
+        <a href="deploy.html"><span>⇧</span>部署说明</a>
+      </nav>
+    </aside>
+
+    <main id="top">
+      <section class="hero portal-hero">
+        <div class="portal-center">
+          <span class="portal-badge">AI-NAV · 中文效率工具集</span>
+          <div class="portal-title">
+            <span class="portal-mark">AI</span>
+            <h1>AI效率导航</h1>
+          </div>
+          <p class="hero-text">
+            按写作、PPT、图片、视频、编程、自动化、简历和开源 Skills 整理常用入口。先选场景，再进入对应工具页。
+          </p>
+          <div class="portal-tabs" aria-label="常用搜索场景">
+            <button type="button" data-search-term="">常用</button>
+            <button type="button" data-search-term="写作">写作</button>
+            <button type="button" data-search-term="PPT">PPT</button>
+            <button type="button" data-search-term="图片">图片</button>
+            <button type="button" data-search-term="编程">编程</button>
+            <button type="button" data-search-term="自动化">自动化</button>
+          </div>
+          <div class="portal-search-card" aria-label="搜索提示">
+            <span>左侧总栏可搜索全部工具</span>
+            <a href="#library">打开完整目录</a>
+          </div>
+          <div class="portal-quick-grid">
+            <a href="ai-writing-tools.html"><strong>AI写作工具</strong><span>文案、周报、改稿</span></a>
+            <a href="ai-ppt-tools.html"><strong>AI PPT工具</strong><span>汇报、答辩、模板</span></a>
+            <a href="ai-video-tools.html"><strong>AI视频工具</strong><span>生成、剪辑、字幕</span></a>
+            <a href="github-skills.html"><strong>开源Skills</strong><span>Agent、自动化项目</span></a>
+          </div>
         </div>
-        <div id="toolLibrary" class="library-grid" aria-live="polite"></div>
       </section>
 
       <aside class="ad-band" aria-label="提示">
@@ -270,6 +245,23 @@
             <a class="outlink" href="#" data-link-id="daily-tools" rel="nofollow sponsored">打开推荐入口</a>
           </article>
         </div>
+      </section>
+
+      <section class="section library-section" id="library">
+        <div class="section-heading">
+          <p class="eyebrow">完整工具目录</p>
+          <h2>按左侧总栏搜索 AI 工具和效率网站</h2>
+          <p id="toolSearchHint">左侧搜索支持中文、英文、工具名和场景关键词，例如：Agent、GitHub、视频、PPT、自动化、简历。</p>
+        </div>
+        <div class="quick-searches" aria-label="热门搜索">
+          <button type="button" data-search-term="GitHub Agent">GitHub Agent</button>
+          <button type="button" data-search-term="视频">视频</button>
+          <button type="button" data-search-term="PPT">PPT</button>
+          <button type="button" data-search-term="写作">写作</button>
+          <button type="button" data-search-term="自动化">自动化</button>
+          <button type="button" data-search-term="简历">简历</button>
+        </div>
+        <div id="toolLibrary" class="library-grid" aria-live="polite"></div>
       </section>
 
       <section class="section skill-section" id="skills">
