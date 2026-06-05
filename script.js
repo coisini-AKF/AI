@@ -9,7 +9,8 @@ const affiliateLinks = {
   study: "ai-study-tools.html",
   data: "ai-data-tools.html",
   assets: "#library",
-  taobao: "https://pub.alimama.com/",
+  taobao: "ai-deals.html",
+  "ai-deals": "ai-deals.html",
   "daily-tools": "free-ai-tools.html",
 };
 
@@ -24,7 +25,8 @@ const labels = {
   study: "AI学习与考试工具",
   data: "数据分析与图表",
   assets: "设计素材与模板库",
-  taobao: "淘宝联盟选品入口",
+  taobao: "AI相关资源入口",
+  "ai-deals": "AI相关资源入口",
   "daily-tools": "今日热门AI工具清单",
 };
 
