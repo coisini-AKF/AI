@@ -65,26 +65,41 @@
         <strong>AI效率导航</strong>
         <small>工具 · 模板 · 开源项目</small>
       </a>
-      <div class="side-search">
-        <label for="toolSearch">全站搜索</label>
-        <input id="toolSearch" type="search" placeholder="搜索工具、场景、模板..." aria-label="搜索工具" />
-        <div class="side-search-actions">
-          <button class="button secondary" type="button" id="clearSearch">清空</button>
-          <span id="toolCount">0 个工具</span>
-        </div>
+      <div class="side-summary">
+        <strong>80+ 工具入口</strong>
+        <span>按场景分类，直接跳转到专题页或官方入口。</span>
       </div>
       <nav class="side-nav" aria-label="分类入口">
-        <a href="#topics"><span>★</span>场景推荐</a>
-        <a href="free-ai-tools.html"><span>◆</span>免费AI工具</a>
-        <a href="#library" data-search-term="写作"><span>✎</span>AI写作</a>
-        <a href="#library" data-search-term="PPT"><span>▣</span>PPT与模板</a>
-        <a href="#library" data-search-term="视频"><span>▶</span>视频生成</a>
-        <a href="#library" data-search-term="图片"><span>◈</span>图片设计</a>
-        <a href="#library" data-search-term="编程"><span>&lt;/&gt;</span>AI编程</a>
-        <a href="#library" data-search-term="自动化"><span>↻</span>自动化</a>
-        <a href="#library" data-search-term="简历"><span>▤</span>简历求职</a>
+        <a href="#topics"><span>★</span>丝瓜推荐</a>
+        <a href="free-ai-tools.html"><span>◆</span>常用推荐</a>
+        <a href="ai-writing-tools.html"><span>✎</span>AI写作工具</a>
+        <div class="side-nav-group">
+          <a href="ai-image-tools.html"><span>◈</span>AI图像工具</a>
+          <a class="side-sub" href="ai-image-tools.html">常用AI图像工具</a>
+          <a class="side-sub" href="ai-image-tools.html">AI图片插画生成</a>
+          <a class="side-sub" href="ai-image-tools.html">AI图片背景移除</a>
+          <a class="side-sub" href="ai-image-tools.html">AI图片物体抹除</a>
+          <a class="side-sub" href="ai-image-tools.html">AI图片无损放大</a>
+          <a class="side-sub" href="ai-image-tools.html">AI图片优化修复</a>
+          <a class="side-sub" href="ai-image-tools.html">AI商品图生成</a>
+          <a class="side-sub" href="ai-image-tools.html">AI 3D模型生成</a>
+        </div>
+        <a href="ai-video-tools.html"><span>▶</span>AI视频工具</a>
+        <a href="#tools"><span>▰</span>AI办公工具</a>
+        <a href="#library"><span>●</span>AI聊天助手</a>
+        <a href="ai-automation-tools.html"><span>◖</span>AI智能体</a>
+        <a href="ai-coding-tools.html"><span>&lt;/&gt;</span>AI编程工具</a>
+        <a href="#library"><span>▣</span>AI开发平台</a>
+        <a href="#library"><span>◉</span>AI设计工具</a>
+        <a href="#library"><span>♪</span>AI音频工具</a>
+        <a href="#library"><span>⌕</span>AI搜索引擎</a>
+        <a href="ai-study-tools.html"><span>▾</span>AI学习网站</a>
+        <a href="#library"><span>▧</span>AI训练模型</a>
+        <a href="#library"><span>♛</span>AI模型评测</a>
+        <a href="#library"><span>▤</span>AI内容检测</a>
+        <a href="#library"><span>Ⓟ</span>AI提示指令</a>
+        <a href="#tools"><span>▪</span>AI副业工具</a>
         <a href="github-skills.html"><span>⌘</span>开源Skills</a>
-        <a href="deploy.html"><span>⇧</span>部署说明</a>
       </nav>
     </aside>
 
@@ -99,17 +114,31 @@
           <p class="hero-text">
             按写作、PPT、图片、视频、编程、自动化、简历和开源 Skills 整理常用入口。先选场景，再进入对应工具页。
           </p>
-          <div class="portal-tabs" aria-label="常用搜索场景">
-            <button type="button" data-search-term="">常用</button>
-            <button type="button" data-search-term="写作">写作</button>
-            <button type="button" data-search-term="PPT">PPT</button>
-            <button type="button" data-search-term="图片">图片</button>
-            <button type="button" data-search-term="编程">编程</button>
-            <button type="button" data-search-term="自动化">自动化</button>
+          <div class="portal-tabs" aria-label="常用入口">
+            <a href="#topics">常用</a>
+            <a href="ai-writing-tools.html">写作</a>
+            <a href="ai-ppt-tools.html">PPT</a>
+            <a href="ai-image-tools.html">图片</a>
+            <a href="ai-coding-tools.html">编程</a>
+            <a href="ai-automation-tools.html">自动化</a>
           </div>
-          <div class="portal-search-card" aria-label="搜索提示">
-            <span>左侧总栏可搜索全部工具</span>
-            <a href="#library">打开完整目录</a>
+          <div class="portal-feature-row" aria-label="首页推荐">
+            <a class="portal-feature-card feature-blue" href="free-ai-tools.html">
+              <span>免费工具</span>
+              <strong>先看可免费试用的 AI 工具</strong>
+            </a>
+            <a class="portal-feature-card feature-green" href="github-skills.html">
+              <span>开源项目</span>
+              <strong>Agent Skills 和自动化框架</strong>
+            </a>
+            <a class="portal-feature-card feature-violet" href="share-copy.html">
+              <span>发布素材</span>
+              <strong>适合转发引流的工具清单文案</strong>
+            </a>
+            <a class="portal-feature-card feature-amber" href="#tools">
+              <span>热门场景</span>
+              <strong>PPT、简历、视频、编程入口</strong>
+            </a>
           </div>
           <div class="portal-quick-grid">
             <a href="ai-writing-tools.html"><strong>AI写作工具</strong><span>文案、周报、改稿</span></a>
@@ -129,7 +158,7 @@
         <div class="section-heading">
           <p class="eyebrow">专题入口</p>
           <h2>按任务直接进入对应工具页</h2>
-          <p>这些页面是为搜索和转发准备的独立入口，适合发到社群、知乎、小红书或朋友圈。</p>
+          <p>这些页面是为不同任务准备的独立入口，适合发到社群、知乎、小红书或朋友圈。</p>
         </div>
         <div class="topic-hub-grid">
           <a href="ai-writing-tools.html"><span>写作</span><strong>AI写作工具</strong><em>文案、周报、邮件、改稿</em></a>
@@ -151,11 +180,11 @@
         <div class="section-heading">
           <p class="eyebrow">高点击意图入口</p>
           <h2>把常见智能工具入口集中到一个页面</h2>
-          <p>上方按钮按任务场景整理；下方完整目录适合按工具名、分类和关键词搜索。</p>
+          <p>上方入口按任务场景整理；下方完整目录适合按分类继续浏览。</p>
         </div>
         <div class="insight-strip" aria-label="工具导航运营指标">
           <div><strong>70+</strong><span>公开工具入口</span></div>
-          <div><strong>14</strong><span>搜索意图分类</span></div>
+          <div><strong>14</strong><span>任务场景分类</span></div>
           <div><strong>12</strong><span>专题入口页面</span></div>
           <div><strong>0</strong><span>强制跳转</span></div>
         </div>
@@ -241,7 +270,7 @@
           <article class="tool-card">
             <span class="tag">合集</span>
             <h3>今日热门AI工具清单</h3>
-            <p>适合做每日更新页，承接“最好用AI工具”“免费AI工具”搜索。</p>
+            <p>适合做每日更新页，承接“最好用AI工具”“免费AI工具”等明确需求。</p>
             <a class="outlink" href="#" data-link-id="daily-tools" rel="nofollow sponsored">打开推荐入口</a>
           </article>
         </div>
@@ -250,16 +279,8 @@
       <section class="section library-section" id="library">
         <div class="section-heading">
           <p class="eyebrow">完整工具目录</p>
-          <h2>按左侧总栏搜索 AI 工具和效率网站</h2>
-          <p id="toolSearchHint">左侧搜索支持中文、英文、工具名和场景关键词，例如：Agent、GitHub、视频、PPT、自动化、简历。</p>
-        </div>
-        <div class="quick-searches" aria-label="热门搜索">
-          <button type="button" data-search-term="GitHub Agent">GitHub Agent</button>
-          <button type="button" data-search-term="视频">视频</button>
-          <button type="button" data-search-term="PPT">PPT</button>
-          <button type="button" data-search-term="写作">写作</button>
-          <button type="button" data-search-term="自动化">自动化</button>
-          <button type="button" data-search-term="简历">简历</button>
+          <h2>按分类浏览 AI 工具和效率网站</h2>
+          <p>这里保留完整目录，适合用户已经明确想找某类工具时继续向下浏览。</p>
         </div>
         <div id="toolLibrary" class="library-grid" aria-live="polite"></div>
       </section>
@@ -282,7 +303,7 @@
           <article class="skill-card">
             <span class="tag">Agent目录</span>
             <h3>Awesome Agents</h3>
-            <p>开源 AI Agent、框架、产品和资源列表，适合承接“AI Agent 工具”搜索。</p>
+            <p>开源 AI Agent、框架、产品和资源列表，适合承接“AI Agent 工具”类需求。</p>
             <a href="https://github.com/kyrolabs/awesome-agents" target="_blank" rel="noopener nofollow">查看 GitHub</a>
           </article>
           <article class="skill-card">
@@ -334,7 +355,7 @@
         <ol class="steps">
           <li><strong>选择任务</strong><span>先确定是写作、PPT、图片、视频、编程、简历、学习还是数据分析。</span></li>
           <li><strong>进入专题</strong><span>打开对应专题页，查看常用工具和适用场景。</span></li>
-          <li><strong>搜索工具名</strong><span>在完整目录里搜索 ChatGPT、Canva、Runway、n8n、AutoGen 等工具。</span></li>
+          <li><strong>浏览完整目录</strong><span>在完整目录里查看 ChatGPT、Canva、Runway、n8n、AutoGen 等工具。</span></li>
           <li><strong>试用再决定</strong><span>优先测试免费额度，长期使用前再确认官方价格和权限。</span></li>
         </ol>
       </section>

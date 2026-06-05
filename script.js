@@ -129,9 +129,6 @@ const storageKey = "affiliate_click_stats_v1";
 const statsBox = document.querySelector("#clickStats");
 const resetButton = document.querySelector("#resetStats");
 const libraryBox = document.querySelector("#toolLibrary");
-const searchInput = document.querySelector("#toolSearch");
-const clearSearchButton = document.querySelector("#clearSearch");
-const toolCount = document.querySelector("#toolCount");
 
 function normalizeText(value) {
   return String(value || "")
@@ -229,9 +226,6 @@ function renderLibrary(query = "") {
         <p>换一个关键词试试，例如 AI、视频、Agent、GitHub、PPT、写作、自动化。</p>
       </article>`;
 
-  if (toolCount) {
-    toolCount.textContent = `${tools.length} 个工具`;
-  }
 }
 
 document.querySelectorAll("[data-link-id]").forEach((link) => {
@@ -248,37 +242,6 @@ document.querySelectorAll("[data-link-id]").forEach((link) => {
       event.preventDefault();
       alert("这里还是占位链接。请先在 script.js 里替换成你的联盟推广链接。");
     }
-  });
-});
-
-function runSearch(value, shouldScroll = false) {
-  if (!searchInput) return;
-  searchInput.value = value;
-  renderLibrary(value);
-  if (shouldScroll && libraryBox) {
-    libraryBox.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-}
-
-searchInput?.addEventListener("input", () => {
-  renderLibrary(searchInput.value);
-});
-
-searchInput?.addEventListener("keydown", (event) => {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    runSearch(searchInput.value, true);
-  }
-});
-
-clearSearchButton?.addEventListener("click", () => {
-  runSearch("", true);
-  searchInput?.focus();
-});
-
-document.querySelectorAll("[data-search-term]").forEach((button) => {
-  button.addEventListener("click", () => {
-    runSearch(button.dataset.searchTerm || "", true);
   });
 });
 
