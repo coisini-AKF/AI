@@ -21,18 +21,21 @@ Grow the AI tools directory into a search-friendly, monetizable static site whil
 
 ## Task Sequence
 
-1. Researcher proposes 3-5 high-intent page ideas or link categories.
-2. Strategist selects the smallest set that improves traffic or monetization.
-3. Builder implements pages, navigation, sitemap, llms.txt, and any UI changes.
-4. Reviewer runs local HTTP checks, search checks, and source inspections.
-5. Publisher commits, pushes to `main`, waits for Netlify, and verifies live URLs.
+1. Researcher verifies platform requirements before any login or form filling: ICP/domain rules, account/media requirements, tracking-link support, payout model, prohibited behavior, and review documents.
+2. Researcher proposes 3-5 high-intent page ideas or link categories with source notes.
+3. Strategist selects the smallest set that improves traffic or monetization and rejects paths blocked by hard requirements.
+4. Builder implements pages, navigation, sitemap, llms.txt, and any UI changes.
+5. Reviewer runs local HTTP checks, search checks, link checks, compliance checks, and source inspections.
+6. Publisher commits, pushes to `main`, waits for Netlify, and verifies live URLs.
 
 ## Validation Plan
 
 - Local page returns HTTP 200 before commit.
 - New pages are included in `sitemap.xml` and `llms.txt`.
 - Homepage navigation or topic hub links to important new pages.
-- Search behavior remains functional after script changes.
+- If search is visible, search behavior must work; if it is not reliable, remove it from the primary UI.
+- Monetization pages do not claim earnings, hide keywords, induce fake clicks, or present unapproved links as affiliate links.
+- Third-party forms are not submitted unless the site meets the platform's hard requirements.
 - Netlify live URL returns HTTP 200 after push.
 
 ## User Handoff
@@ -45,7 +48,18 @@ User action is needed only for:
 
 ## Current Next Best Actions
 
-1. Replace placeholder affiliate URLs in `script.js` with real tracked links.
-2. Submit `sitemap.xml` to search engines.
-3. Add analytics such as GA4, Umami, or Baidu Tongji after account setup.
-4. Add 5-10 content snippets for social posting and link sharing.
+1. Use non-ICP-dependent monetization first: official SaaS affiliate programs, social-media promotion positions, or service/consulting pages.
+2. Replace placeholder affiliate URLs in `script.js` only after real tracked links are approved.
+3. Submit `sitemap.xml` to search engines.
+4. Add analytics such as GA4, Umami, or Baidu Tongji after account setup.
+5. Add 5-10 content snippets for social posting and link sharing.
+
+## Monetization Preflight Rule
+
+Do not start account configuration until the Researcher can answer all of these:
+
+- Does the platform require ICP, custom domain, company registration, minimum traffic, or original-content review?
+- Can this site generate a tracked website link today?
+- Is the recommended product directly related to AI tools, PPT, design, office, automation, coding, learning, or open-source agent workflows?
+- Is the promotion allowed without hidden text, fake clicks, forced redirects, or exaggerated earnings claims?
+- What exact page and link will be changed after approval?

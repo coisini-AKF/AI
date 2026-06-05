@@ -70,12 +70,22 @@ const toolDirectory = [
   { category: "音频配音", name: "Udio", desc: "AI 音乐生成和创作。", url: "https://www.udio.com/" },
   { category: "音频配音", name: "Murf", desc: "商业配音和旁白生成。", url: "https://murf.ai/" },
 
+  { category: "AI搜索引擎", name: "Perplexity", desc: "带来源引用的 AI 搜索和资料整理。", url: "https://www.perplexity.ai/" },
+  { category: "AI搜索引擎", name: "秘塔AI搜索", desc: "中文资料搜索、总结和大纲整理。", url: "https://metaso.cn/" },
+  { category: "AI搜索引擎", name: "You.com", desc: "搜索、聊天和研究型 AI 助手。", url: "https://you.com/" },
+  { category: "AI搜索引擎", name: "Phind", desc: "面向开发者问题的 AI 搜索。", url: "https://www.phind.com/" },
+
   { category: "编程开发", name: "GitHub Copilot", desc: "代码补全、解释、调试和开发助手。", url: "https://github.com/features/copilot" },
   { category: "编程开发", name: "Cursor", desc: "AI 原生代码编辑器。", url: "https://www.cursor.com/" },
   { category: "编程开发", name: "Replit", desc: "在线开发、部署和 AI 编程助手。", url: "https://replit.com/" },
   { category: "编程开发", name: "v0", desc: "用提示词生成前端界面和组件。", url: "https://v0.dev/" },
   { category: "编程开发", name: "Bolt", desc: "浏览器内生成和运行全栈应用。", url: "https://bolt.new/" },
   { category: "编程开发", name: "Codeium Windsurf", desc: "AI 编程 IDE 和代码代理。", url: "https://windsurf.com/" },
+
+  { category: "开发平台", name: "OpenAI Platform", desc: "模型 API、工具调用和多模态应用开发平台。", url: "https://platform.openai.com/" },
+  { category: "开发平台", name: "Anthropic Console", desc: "Claude API、提示词和企业应用开发入口。", url: "https://console.anthropic.com/" },
+  { category: "开发平台", name: "Google AI Studio", desc: "Gemini API、提示词测试和应用原型开发。", url: "https://aistudio.google.com/" },
+  { category: "开发平台", name: "ModelScope", desc: "中文模型、数据集、应用和开源 AI 社区。", url: "https://www.modelscope.cn/" },
 
   { category: "办公文档", name: "Microsoft Copilot", desc: "Office、Teams、Word、Excel 和企业办公助手。", url: "https://copilot.microsoft.com/" },
   { category: "办公文档", name: "Google Workspace AI", desc: "Gmail、Docs、Sheets 和协作办公 AI。", url: "https://workspace.google.com/solutions/ai/" },
@@ -106,6 +116,18 @@ const toolDirectory = [
   { category: "自动化", name: "Make", desc: "可视化自动化和业务流程连接。", url: "https://www.make.com/" },
   { category: "自动化", name: "IFTTT", desc: "个人效率和设备自动化。", url: "https://ifttt.com/" },
   { category: "自动化", name: "n8n", desc: "开源工作流自动化。", url: "https://n8n.io/" },
+
+  { category: "内容检测", name: "GPTZero", desc: "AI 生成内容检测和文本分析。", url: "https://gptzero.me/" },
+  { category: "内容检测", name: "Originality.ai", desc: "AI 内容检测、抄袭检查和内容质量辅助。", url: "https://originality.ai/" },
+  { category: "内容检测", name: "ZeroGPT", desc: "AI 文本检测和改写痕迹检查。", url: "https://www.zerogpt.com/" },
+
+  { category: "提示词资源", name: "PromptHero", desc: "AI 绘画和文本提示词案例库。", url: "https://prompthero.com/" },
+  { category: "提示词资源", name: "FlowGPT", desc: "社区提示词、聊天机器人和工作流模板。", url: "https://flowgpt.com/" },
+  { category: "提示词资源", name: "Awesome ChatGPT Prompts", desc: "开源 ChatGPT 提示词清单。", url: "https://github.com/f/awesome-chatgpt-prompts" },
+
+  { category: "模型训练评测", name: "Hugging Face", desc: "模型、数据集、Spaces 应用和社区评测。", url: "https://huggingface.co/" },
+  { category: "模型训练评测", name: "Open LLM Leaderboard", desc: "开源大模型评测榜单和对比入口。", url: "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard" },
+  { category: "模型训练评测", name: "LMSYS Chatbot Arena", desc: "模型对战评测和用户偏好排名。", url: "https://lmarena.ai/" },
 
   { category: "GitHub Skills", name: "Awesome Agent Skills", desc: "Agent Skills 和可复用技能清单。", url: "https://github.com/VoltAgent/awesome-agent-skills" },
   { category: "GitHub Skills", name: "Awesome Agents", desc: "AI Agent 框架、项目和资源目录。", url: "https://github.com/kyrolabs/awesome-agents" },
@@ -189,7 +211,12 @@ function renderLibrary(query = "") {
       tool.category === "PPT演示" ? "ppt presentation slides 演示 汇报 模板" : "",
       tool.category === "写作文案" ? "writing write copy 文案 写作 改稿 润色" : "",
       tool.category === "编程开发" ? "code coding dev 编程 代码 开发" : "",
+      tool.category === "开发平台" ? "api platform developer console 模型 api 开发平台" : "",
       tool.category === "自动化" ? "automation workflow 自动化 工作流" : "",
+      tool.category === "AI搜索引擎" ? "search research 搜索 研究 检索 来源" : "",
+      tool.category === "内容检测" ? "detector ai content check 检测 查重 原创" : "",
+      tool.category === "提示词资源" ? "prompt prompts 提示词 指令 咒语" : "",
+      tool.category === "模型训练评测" ? "model leaderboard eval training 模型 训练 评测 榜单" : "",
     ];
     const haystack = normalizeText(aliases.join(" "));
     return !keywords.length || keywords.every((keyword) => haystack.includes(keyword));
