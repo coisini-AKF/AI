@@ -1,13 +1,14 @@
-# AI Tools Site Growth Crew
+﻿# AI Tools Site Growth Crew
 
 ## Crew Goal
 
-Grow the AI tools directory into a search-friendly, monetizable static site while keeping every change compliant, verifiable, and deployable through GitHub to Netlify.
+Grow the AI tools directory into a search-friendly, monetizable static site while keeping every change compliant, verifiable, and deployable through GitHub Pages.
 
 ## Inputs
 
 - Repo: `coisini-AKF/AI`
-- Live site: `https://shiny-belekoy-d2b680.netlify.app/`
+- Live site: `https://coisini-akf.github.io/AI/`
+- Backup host: Netlify project is paused when account credits are exceeded.
 - Main files: `index.html`, `styles.css`, `script.js`, `sitemap.xml`, `llms.txt`
 - Constraints: no hidden keyword stuffing, no fake clicks, no password/API key handling in chat
 
@@ -17,7 +18,7 @@ Grow the AI tools directory into a search-friendly, monetizable static site whil
 - Strategist: chooses which pages and links matter most for traffic and conversion.
 - Builder: creates pages, edits code, improves UI, and wires internal links.
 - Reviewer: checks policy, UX, SEO basics, broken links, and mobile layout risk.
-- Publisher: commits changes, pushes to GitHub, verifies Netlify deployment, and reports live URLs.
+- Publisher: commits changes, pushes to GitHub, verifies GitHub Pages deployment, and reports live URLs.
 
 ## Task Sequence
 
@@ -26,7 +27,7 @@ Grow the AI tools directory into a search-friendly, monetizable static site whil
 3. Strategist selects the smallest set that improves traffic or monetization and rejects paths blocked by hard requirements.
 4. Builder implements pages, navigation, sitemap, llms.txt, and any UI changes.
 5. Reviewer runs local HTTP checks, search checks, link checks, compliance checks, and source inspections.
-6. Publisher commits, pushes to `main`, waits for Netlify, and verifies live URLs.
+6. Publisher commits, pushes to `main`, waits for GitHub Pages, and verifies live URLs.
 
 ## Validation Plan
 
@@ -36,7 +37,7 @@ Grow the AI tools directory into a search-friendly, monetizable static site whil
 - If search is visible, search behavior must work; if it is not reliable, remove it from the primary UI.
 - Monetization pages do not claim earnings, hide keywords, induce fake clicks, or present unapproved links as affiliate links.
 - Third-party forms are not submitted unless the site meets the platform's hard requirements.
-- Netlify live URL returns HTTP 200 after push.
+- GitHub Pages live URL returns HTTP 200 after push.
 
 ## User Handoff
 

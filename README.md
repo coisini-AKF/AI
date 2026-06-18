@@ -1,4 +1,4 @@
-# AI智能工具导航
+﻿# AI智能工具导航
 
 这是一个用于“流量跳转变现”的静态网站模板，不卖自有产品，核心变现方式是：
 
@@ -20,19 +20,20 @@
 - `free-ai-tools.html`：免费 AI 工具专题页。
 - `github-skills.html`：GitHub 开源 Skills 专题页。
 - `ai-writing-tools.html`、`ai-ppt-tools.html`、`ai-video-tools.html`、`ai-image-tools.html`、`ai-coding-tools.html`、`ai-automation-tools.html`、`ai-resume-tools.html`、`ai-study-tools.html`、`ai-data-tools.html`：高意图搜索专题页。
-- `deploy.html`：GitHub 到 Netlify 自动部署说明页。
+- `deploy.html`：GitHub Pages 自动部署说明页。
 - `share-copy.html`：小红书、知乎、朋友圈和社群发布文案。
 - `disclosure.html`：公开链接与推荐说明页。
 - `admin-growth.html`：内部增长、收益优先级、链接配置和点击统计管理页，设置为 noindex。
 - `styles.css`：响应式布局和工具目录样式。
 - `script.js`：联盟链接配置、点击统计、完整工具目录和搜索逻辑。
 - `assets/`：页面图片资源。
-- `netlify.toml`：Netlify 连接 GitHub 后直接部署根目录。
+- `.github/workflows/pages.yml`：GitHub Pages 自动部署工作流。
+- `netlify.toml`：Netlify 备用部署配置；当前主发布走 GitHub Pages。
 - `robots.txt`、`sitemap.xml`、`llms.txt`：公开索引和 AI 可读说明文件。
 
 ## 后续自动部署
 
-把这个项目推到 GitHub 后，在 Netlify 里选择 Import from Git，连接这个仓库。以后只要修改文件并推送到 GitHub，Netlify 会自动部署，不需要再手动上传 zip。
+当前主站部署在 GitHub Pages：`https://coisini-akf.github.io/AI/`。以后只要修改文件并推送到 GitHub `main` 分支，GitHub Actions 会自动部署，不需要本地电脑保持在线。Netlify 可在额度恢复后作为备用托管。
 
 ## GitHub 开源 Skills 变现边界
 
